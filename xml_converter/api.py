@@ -3,6 +3,7 @@ from rest_framework.parsers import MultiPartParser
 from rest_framework.response import Response
 from rest_framework.viewsets import ViewSet
 
+from xml_converter.tools import convert_from_xml_to_dict
 
 class ConverterViewSet(ViewSet):
     # Note this is not a restful API
@@ -11,4 +12,4 @@ class ConverterViewSet(ViewSet):
 
     @action(methods=["POST"], detail=False, url_path="convert")
     def convert(self, request, **kwargs):
-        return Response({})
+        return Response(convert_from_xml_to_dict(request.FILES['file']))
