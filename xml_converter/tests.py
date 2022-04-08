@@ -1,7 +1,7 @@
 from pathlib import Path
 
 from django.test import TestCase, Client
-from tools import convert_from_xml_to_dict
+from xml_converter.tools import convert_from_xml_to_dict
 
 
 TEST_DIR = Path(__file__).parent / Path('test_files')
