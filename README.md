@@ -54,4 +54,4 @@ The tests provide additional examples of more complex conversions.
 
 
 ### Candidate notes
-How I've solved this problem: First, I researched if there were some lib to help do the job. I've found a lib that solves all the problem called `xmltodict`, but I decided to not use it and show you my abilities in programming and problem solving. I've decided to use the native tool `xml.etree.ElementTree` with which I can manipulate the XML as a tree, so I could do my own algorithm to convert a simple XML to a dictionary (and later return it as a JSON).
+How I've solved this problem: First, I've researched if there were some lib to help do the job. I've found a lib that solves all the problem called `xmltodict`, but I've decided to not use it and show you my abilities in programming and problem solving. I've decided to use the native tool `xml.etree.ElementTree` with which I can manipulate the XML as a tree, so I could do my own algorithm to convert a simple XML to a dictionary (and later return it as a JSON).
